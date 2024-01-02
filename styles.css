@@ -396,7 +396,7 @@ header > div {
 /* Footer */
 footer {
   background: #28a997;
-  padding: 50px 70px;
+  padding: 50px 70px !important;
 }
 
 footer > div > img {
