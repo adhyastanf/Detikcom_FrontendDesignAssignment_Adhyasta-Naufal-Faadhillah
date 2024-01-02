@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
     <link type="image/x-icon" rel="shortcut icon" href="https://cdn.detik.net.id/health2/images/favicon-detikhealth.ico?v=2024010117209" />
     <meta name="description" content="Berita, Tips, Artikel, Info terkait Kesehatan Terbaru Hari Ini. Diet, parenting, seks, obat dan Penyakit. Ada juga konsultasi dokter dan kalkulator kesehatan." itemprop="description" />
     <title>detikHealth | Berita Artikel Kesehatan, Diet, Seks dan Konsultasi</title>
   </head>
   <body>
-    <header class="bg-hero container p-0" style="max-width: 1440px;">
-      <nav class="navbar navbar-expand-lg container-fluid nav-blur position-fixed start-50 translate-middle-x z-3" style="max-width: 1194px">
+    <header class="bg-hero container-fluid" style="max-width: 1440px">
+      <nav class="navbar navbar-expand-lg container-fluid nav-blur position-fixed start-50 translate-middle-x z-3" style="max-width: 1194px;">
         <div class="container-fluid">
           <a class="navbar-brand py-0 me-0" href="#"><img src="./assets/navbar-brand.png" alt="detik-health-icon" /></a>
           <button class="navbar-toggler border-0 p-0 rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,25 +48,25 @@
       </div>
     </header>
 
-    <main class="container p-0" style="max-width: 1440px;">
-      <section class="container-fluid" id="tentang-acara" style="max-width: 1194px; padding: 137px 0">
+    <main class="mx-auto" style="max-width: 1440px">
+      <section class="container-fluid" id="tentang-acara" style="max-width: 1194px; padding-top: 137px; padding-bottom: 137px;">
         <div class="d-grid grid-section1">
-          <div>
+          <div data-aos="fade-right" data-duration="3000">
             <div class="w-100 overflow-hidden" style="margin-bottom: 30px; border-radius: 20px">
               <img src="./assets/map 1.png" width="100%" alt="Map 10K Sudirman Run" />
             </div>
             <h1 class="heading-section1">10K FUN RUN</h1>
             <p>Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-duration="3000">
             <h1 class="heading-section1">GRATIS DAN BERHADIAH</h1>
             <p>Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta serta berbagai macam doorprize yang menarik!</p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-duration="3000">
             <h1 class="heading-section1">50+ TENANT BAZZAR</h1>
             <p>Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</p>
           </div>
-          <div class="d-lg-flex d-block justify-content-between" style="gap: 30px">
+          <div class="d-lg-flex d-block justify-content-between" style="gap: 30px" data-aos="fade-left" data-duration="3000">
             <div class="overflow-hidden" style="border-radius: 20px; min-width: 178px">
               <img src="./assets/perform 1.png" class="w-100 object-fit-cover" alt="Perform Artist Sudirman Run" />
             </div>
@@ -75,12 +76,14 @@
             </div>
           </div>
         </div>
-        <button type="button" class="p-btn2 btn-color3 rounded-pill text-white mx-auto d-block" style="margin-top: 50px">Daftar Sekarang</button>
+        <a href="https://event.detik.com/" class="nav-link">
+          <button type="button" class="p-btn2 btn-color3 rounded-pill text-white mx-auto d-block" style="margin-top: 50px">Daftar Sekarang</button>
+        </a>
       </section>
 
       <!-- SECTION 2 -->
       <section class="container-section2" style="padding: 60px 0">
-        <h1 class="heading-section2">DIDUKUNG OLEH</h1>
+        <h1 class="heading-section2" data-aos="zoom-out" data-duration="1000">DIDUKUNG OLEH</h1>
         <div class="marquee">
           <div class="d-flex align-items-center logo-slide">
             <div class="d-flex align-items-center">
@@ -139,10 +142,10 @@
 
       <!-- SECTION 3 -->
       <section class="container-fluid container-section3" id="galeri" style="max-width: 1058px">
-        <h1>GALERI SUDIRMAN</h1>
+        <h1 data-aos="zoom-out" data-duration="1000">GALERI SUDIRMAN</h1>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner overflow-hidden position-relative" style="border-radius: 32px">
+        <div id="carouselExampleIndicators" class="carousel slide container-fluid" data-bs-ride="carousel">
+          <div class="carousel-inner overflow-hidden position-relative">
             <div class="carousel-item active">
               <img src="./assets/slider-1.png" class="d-block w-100" alt="..." />
             </div>
@@ -163,7 +166,7 @@
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span aria-hidden="true">
-                <img src="./assets/arrow-right.svg" alt="" />
+                <img src="./assets/arrow-right.svg" alt="arrow-right" />
               </span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -189,7 +192,7 @@
       <!-- SECTION-4 -->
       <section class="section4 position-relative" id="berita">
         <div class="container-section4 container-fluid" style="max-width: 1194px">
-          <h1>ARTIKEL TERKAIT</h1>
+          <h1 data-aos="zoom-out" data-duration="1000">ARTIKEL TERKAIT</h1>
           <div class="d-flex justify-content-center container-tabs">
             <ul class="nav nav-tabs border-0 rounded-pill" id="ex1" role="tablist">
               <li class="nav-item" role="presentation">
@@ -271,7 +274,7 @@
                   <img src="./assets/thumbnail-artikel-1.png" width="100%" alt="Thumbnail 1" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -285,7 +288,7 @@
                   <img src="./assets/thumbnail-artikel-2.png" width="100%" alt="Thumbnail 2" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -299,7 +302,7 @@
                   <img src="./assets/thumbnail-artikel-3.png" width="100%" alt="Thumbnail 3" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -313,7 +316,7 @@
                   <img src="./assets/thumbnail-artikel-4.png" width="100%" width="100%" alt="Thumbnail 4" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -327,7 +330,7 @@
                   <img src="./assets/thumbnail-artikel-5.png" width="100%" alt="Thumbnail 5" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -341,7 +344,7 @@
                   <img src="./assets/thumbnail-artikel-6.png" width="100%" alt="Thumbnail 6" />
                   <div class="top-timestamp">
                     <img src="./assets/camera.svg" alt="icon-camera" />
-                    <span class="text-white">5 foto</span>
+                    <span class="text-white">5 Foto</span>
                   </div>
                 </div>
                 <div>
@@ -442,11 +445,11 @@
       </section>
     </main>
 
-    <footer class="container" style="max-width: 1440px;">
+    <footer class="container-fluid" style="max-width: 1440px">
       <div class="d-flex d-lg-block justify-content-center">
         <img src="./assets/logo-event-2.png" alt="logo-event-2" />
       </div>
-      <div class="footer-content d-lg-flex d-block text-center justify-content-between">
+      <div class="footer-content d-flex flex-column flex-lg-row text-center justify-content-between">
         <p class="text-wrap d text-lg-start">
           Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta
           doorprize dengan total puluhan juta rupiah
@@ -454,11 +457,21 @@
         <div>
           <p class="text-center d-block" style="margin-bottom: 7px">Connect With Us</p>
           <div class="d-flex justify-content-center justify-content-lg-start" style="gap: 8px">
-            <img src="./assets/facebook-icon.svg" alt="facebook-icon" />
-            <img src="./assets/X-icon.svg" alt="X-icon" />
-            <img src="./assets/instagram-icon.svg" alt="instagram-icon" />
-            <img src="./assets/linkedin-icon.svg" alt="linkedin-icon" />
-            <img src="./assets/youtube-icon.svg" alt="youtube-icon" />
+            <a href="https://www.facebook.com/detikcom/?locale=id_ID">
+              <img src="./assets/facebook-icon.svg" alt="facebook-icon" />
+            </a>
+            <a href="https://twitter.com/detikcom">
+              <img src="./assets/X-icon.svg" alt="X-icon" />
+            </a>
+            <a href="https://www.instagram.com/detikcom/?hl=en">
+              <img src="./assets/instagram-icon.svg" alt="instagram-icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/detik-com/?originalSubdomain=id">
+              <img src="./assets/linkedin-icon.svg" alt="linkedin-icon" />
+            </a>
+            <a href="https://www.youtube.com/detikcom">
+              <img src="./assets/youtube-icon.svg" alt="youtube-icon" />
+            </a>
           </div>
         </div>
       </div>
@@ -466,6 +479,10 @@
       <p class="text-white text-center text-lg-start">© 2021 Landify UI Kit. All rights reserved</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

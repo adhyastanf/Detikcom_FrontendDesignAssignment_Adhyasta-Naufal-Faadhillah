@@ -2,6 +2,7 @@
 
 :root {
   font-family: 'Montserrat';
+  scroll-behavior: smooth;
 }
 
 html,
@@ -251,10 +252,22 @@ header > div {
   text-align: center;
 }
 
+.container-section3 img{
+  aspect-ratio: 16 / 9;
+}
+
+.carousel-inner{
+  border-radius: 32px;
+}
+
+.carousel-indicators img{
+  border-radius:16px;
+}
+
 .container-carousel {
   gap: 14px !important;
-  padding-top: 24px;
-  padding-bottom: 137px;
+  margin-top: 24px;
+  margin-bottom: 137px;
 }
 
 .container-carousel button.active {
@@ -402,6 +415,7 @@ footer {
 footer > div > img {
   margin-bottom: 30px;
 }
+
 .footer-content {
   gap: 100px;
   color: white;
@@ -416,6 +430,9 @@ footer > div > img {
   background-color: white;
   margin: 30px 0;
 }
+
+
+/* Responsive */
 
 @media (max-width: 992px) {
   nav {
@@ -462,6 +479,10 @@ footer > div > img {
     padding-bottom: 400px;
     position: relative;
   }
+
+  .footer-content {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 756px) {
@@ -498,6 +519,10 @@ footer > div > img {
     height: 943px;
   }
 
+  .container-carousel {
+    gap: 6px !important;
+  }
+
   .section4::before {
     background: url('./assets/bg-berita-2.png') !important;
     background-position: bottom !important;
@@ -513,7 +538,16 @@ footer > div > img {
     left: 0 !important;
   }
 }
+
 @media (max-width: 576px) {
+  .carousel-inner{
+    border-radius: 16px;
+  }
+
+  .carousel-indicators img{
+    border-radius:8px;
+  }
+
   .section4::before {
     background: url('./assets/bg-berita-2.png') !important;
     background-position: bottom !important;
